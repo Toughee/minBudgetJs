@@ -1,9 +1,15 @@
 # qBudget
 
 
-# Statistics and estimates and written in Python
+# Statistics and estimates app written in Python
 
 # Categories available
+
+# Yearly earnings
+# Savings
+# College Fund Money
+# Vacation
+# Small sum purchases
 
 Yearly earnings = {
 	Spending = input('')
