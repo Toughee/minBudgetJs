@@ -1,6 +1,5 @@
 # qBudget
 
-
 # Statistics and estimates app written in Python
 
 # Categories available
@@ -12,41 +11,41 @@
 # Small sum purchases
 
 Yearly earnings = {
-	Spending = input('')
-	Tax = input('')
+	Spending = input('Enter an approximate number of your earnings')
+	Tax = input('Enter which state you reside')
 }
 
 Savings = {
 	# Savings = input('')
-	# Earnings = input('earnings')
-	# Year_for_savings = input('')
+	# Earnings = input('Enter an approximate number of your earnings')
+	# Time_for_savings = input('Enter the time you have left in %r Weeks, %r Months, %r Years')
 	# Desired_time_of use = input('')
 	# Savings = print(''+''+'')
 }
 
 College_fund_money = {
-	# Savings = input('')
+	# Savings = input('Enter your current savings')
 	# Earnings = input('earnings')
 	# Time_for_savings = input('Weeks, Months, Years')
-	# Desired_time_of use = input('')
+	# Desired_time_of use = input('When do you expect to use it')
 	# Savings = print(''+''+'')
 }
 
 Vacation = {
 	# Savings = input('')
-	# Earnings = input('earnings')
+	# Earnings = input('Enter an approximate number of your earnings')
 	# Time_for_savings = input('Weeks, Months, Years')
 	# Desired_time_of_use = input('')
-	# Misc_purchases = input('')
-	# Savings = print(''+''+'')
+	# Misc_purchases = input('Enter the amount you wish to spend on small things')
+	# Vacation = print(''+''+'')
 }
 
 Small_sum_purchase = {
 	# Purchase = input('what do you want to buy?')
 	# Savings = input('')
-	# Earnings = input('Earnings')
+	# Earnings = input('Enter an approximate number of your earnings')
 	# Time_for_savings = input('In Weeks, Months, Years')
 	# Desired_time_of_use = input('')
-	# Misc_purchases = input('')
+	# Misc_purchases = input('Enter the amount you wish to spend on small things')
 	# Small_sum_purchase = print(''+''+'')
 }
