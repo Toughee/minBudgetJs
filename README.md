@@ -1,14 +1,15 @@
 # qBudget
 
-Statistics app written in Python
+Statistics app created in Python
 
 ## Categories available: 
 
-- Yearly earnings
+- Gross annual income per hour
 - Savings
 - College Fund Money
 - Vacation
-- Small sum purchases
+- Small sum purchase
+
 
 ### Contributing
 
