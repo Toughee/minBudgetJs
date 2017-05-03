@@ -14,7 +14,6 @@ d = Button(master, text="College Fund Money", command=callback)
 e = Button(master, text="Vacation", command=callback)
 f = Button(master, text="Small sum purchase", command=callback)
 
-
 b.pack()
 c.pack()
 d.pack()
