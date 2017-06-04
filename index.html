@@ -1,48 +1,101 @@
 <!Doctype html>
 
-<html lang = "en">
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-    <title>qBudget</title>
+    <meta charset="utf-8">
+    <title>minBudget</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-	<style>
-	@import url('https://fonts.googleapis.com/css?family=Titillium+Web:900');
-	</style>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Titillium+Web:900');
+    </style>
 
 </head>
 
 
 <body>
-	<div class ="calcul-border">
-		<div class ="calcul-border-2">
-			<div class="calcul-border-3">
-			<h1>qBUDGET</h1>
+        <div class="calcul-border-2">
+            <div class="calcul-border-3">
+                <h1>MinBudget.js</h1>
 
-			<p> App description
-			</p>
-			<!--
+                <p>Budget calculator made using js</p>
+                <!--
 			document id("Calculate"). innerHTML
 			-->
-			</div>
-				<div>
-					<ul>
-					<button class="btn">1</button>
-					<button class="btn">2</button>
-					<button class="btn">3</button>
-					<button class="btn">4</button>
-					<button class="btn">5</button>
-					<button class="btn">6</button>
-					</ul>
-				</div>
+            </div>
+            <div>
+                <ul>
+                    <div class="spacing">
+                        <button class="btn">Gross Annual Income per Hour</button>
+                        gross_income
+                        <input type="number" name="gross_income" value="gross_income">
+                    </div>
 
-		</div>
+                    <div class="spacing">
+                        <button class="btn">Savings</button>
+                        Earnings
+                        <input type="number" name="Earnings" value="Earnings"> Additional_earnings
+                        <input type="number" name="Additional_earnings" value="Additional_earnings"> Years
+                        <input type="number" name="Years" value="Years"> Months
+                        <input type="number" name="Months" value="Additional_earnings"> Weeks
+                        <input type="number" name="Weeks" value="Weeks"> Time_for_savings
+                        <input type="number" name="Time_for_savings" value="Time_for_savings"> Savings_goal
+                        <input type="number" name="Savings_goal" value="Savings_goal">
+                    </div>
+
+                    <div class="spacing">
+                        <button class="btn">College Fund Money</button>
+                        Children
+                        <input type="number" name="Children" value="Children"> College
+                        <input type="text" name="College" value="College"> Savings
+                        <input type="number" name="Savings" value="Savings"> Earnings
+                        <input type="number" name="Earnings" value="Earnings"> Additional_earnings
+                        <input type="number" name="Additional_earnings" value="Additional_earnings"> Years
+                        <input type="number" name="Years" value="Years"> Months
+                        <input type="number" name="Months" value="Additional_earnings"> Weeks
+                        <input type="number" name="Weeks" value="Weeks"> Time_for_savings
+                        <input type="number" name="Time_for_savings" value="Time_for_savings"> Desired_time_of_use
+                        <input type="number" name="Desired_time_of_use" value="Desired_time_of use"> Misc_purchases
+                        <input type="number" name="Misc_purchases" value="Misc_purchases">
+                    </div>
+
+                    <div class="spacing">
+                        <button class="btn">Vacation</button>
+                        Destination
+                        <input type="text" name="Destination" value="Destination"> Savings
+                        <input type="number" name="Savings" value="Savings"> Earnings
+                        <input type="number" name="Earnings" value="Earnings"> Additional_earnings
+                        <input type="number" name="Additional_earnings" value="Additional_earnings"> Time_for_savings
+                        <input type="number" name="Time_for_savings" value="Time_for_savings"> Desired_time_of_use
+                        <input type="number" name="Desired_time_of_use" value="Desired_time_of use"> Misc_purchases
+                        <input type="number" name="Misc_purchases" value="Misc_purchases">
+                        <input type="number" name="Zipcode" value="Zipcode">
+                    </div>
 
 
-</div>
+                    <div class="spacing">
+
+                        <button class="btn">Small sum purchase</button>
+                        Small_sum_purchase
+                        <input type="text" name="Small_sum_purchase" value="Small_sum_purchase"> Savings
+                        <input type="number" name="Savings" value="Savings"> Earnings
+                        <input type="number" name="Earnings" value="Earnings"> Additional_earnings
+                        <input type="number" name="Additional_earnings" value="Additional_earnings"> Time_for_savings
+                        <input type="number" name="Time_for_savings" value="Time_for_savings"> Desired_time_of_use
+                        <input type="number" name="Desired_time_of_use" value="Desired_time_of use"> Misc_purchases
+                        <input type="number" name="Misc_purchases" value="Misc_purchases">
+                    </div>
+
+                </ul>
+            </div>
+
+            <script>
+                js / Calculate.js
+            </script>
 
 
+        </div>
 </body>
 
 
