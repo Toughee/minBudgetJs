@@ -1,75 +1,91 @@
-					 /*
-					========	Style css	========
-					*/
 
+header {
+    background: black;
+}
 
 /*
-========	Body	========
+Font
 */
-
-body {
-	background-color: #C3C3C3;
-	position: absolute;
-	top: 5px;
-	bottom: 0;
-	left: 200px;
-}
-/*
-.calcul-border {
-	position: fixed;
-	background: gray;
-	display: block;
-	width: 900px;
-	height: 400px;
-	margin: 0 auto;
-	top: 10px;
-	left: 175px;
-}
-*/
-.calcul-border-2{
-	background: white;
-	width: 800px;
-	height: 700px;
-	margin: 0 auto;
-	top: 30px;
-	left: 75%;
-	margin: 0 auto;
-}
-
-.calcul-border-3 {
-	width: 250;
-	height: 100;
-	background: black;
-	padding: 10px 100px 10px 100px;
-	margin-left: 200px;
-	margin-right: 200px;
-	margin: 0 auto;
-}
-.spacing {
-	text-align: center;
-}
-
-
-/*
-========	Font	========
-*/
-
 
 h1 {
-	font-family: 'Titillium Web', Bold;
-	color: #1EBB06;
-	text-align: center;
+    text-align: center;
+    padding: 5px auto;
+    font-family: Helvetica;
+    color: red;
+    font-size: 1px;
 }
-
-h2 {
-
+h6 {
+    padding-top: 10px; 
 }
-
+.bigr {
+    color: green;
+    text-align: center;
+    font-size: 75px;
+    margin-bottom: -15px;
+    margin-top: -10px;
+}
 p {
-	color: #1EBB06;
-	text-align: center;
+    text-align: center;
+    padding: 5px;
+    font-family: Impact;
+    color: white;
+    font-size: 20px;
 }
 
 button {
-	
+    padding: 1px 10px 1px 10px;
+}
+
+/*
+Budget options display
+*/
+
+#grossIncomeSect {
+    width: 20%;
+    padding: 20px 0px 10px 0px;
+    margin-left: 500px;
+    margin-right: 500px;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid black;
+    background: #F5F5F5;
+}
+#savingsSect {
+    width: 20%;
+    padding: 0px 50px 30px 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: -50px;
+    text-align: left;
+    border: 1px solid black;
+    background: #F5F5F5;
+}
+#collegeFundSect {
+    width: 20%;
+    padding: 0px 50px 30px 50px;
+    margin-top: -10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: -50px;
+    text-align: left;
+    border: 1px solid black;
+    background: #F5F5F5;
+}
+#vacationSect {
+    width: 20%;
+    padding: 0px 50px 30px 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: -10px;
+    text-align: left;
+    border: 1px solid black;
+    background: #F5F5F5;
+}
+#set {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+input {
+    position: relative;
+    margin: 10px;
 }
