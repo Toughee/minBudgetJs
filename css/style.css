@@ -1,6 +1,35 @@
 
+/*
+=================
+Media Queries
+=================
+*/
+/*
+@media screen and (min-width: 480px) {
+    body {    }
+}
+@media screen and (min-width: 600px) {
+    body {    }
+}
+@media screen and (min-width: 800px) {
+    body {    }
+}
+@media screen and (min-width: 1020px) {
+    body {    }
+}
+@media screen and (min-width: 1250px) {
+    body {    }
+}
+@media screen and (min-width: 1400px) {
+    body {    }
+}
+*/
+
+/*
+Body
+*/
 header {
-    background: black;
+    background: #000000;
 }
 
 /*
@@ -10,15 +39,15 @@ Font
 h1 {
     text-align: center;
     padding: 5px auto;
-    font-family: Helvetica;
-    color: red;
+    font-family: 'Helvetica';
+    color: #EF2121;
     font-size: 1px;
 }
 h6 {
     padding-top: 10px; 
 }
 .bigr {
-    color: green;
+    color: #2EAF0C;
     text-align: center;
     font-size: 75px;
     margin-bottom: -15px;
@@ -27,8 +56,8 @@ h6 {
 p {
     text-align: center;
     padding: 5px;
-    font-family: Impact;
-    color: white;
+    font-family: 'Impact';
+    color: #FFFFFF;
     font-size: 20px;
 }
 
@@ -41,44 +70,44 @@ Budget options display
 */
 
 #grossIncomeSect {
-    width: 20%;
-    padding: 20px 0px 10px 0px;
+    width: 25%;
+    padding: 40px 0px 10px 0px;
     margin-left: 500px;
     margin-right: 500px;
     text-align: center;
     margin-top: 20px;
-    border: 1px solid black;
+    border: 2px solid #000000;
     background: #F5F5F5;
 }
 #savingsSect {
     width: 20%;
-    padding: 0px 50px 30px 50px;
+    padding: 40px 40px 30px 40px;
     margin-left: 500px;
     margin-right: 500px;
-    margin-top: -50px;
+    margin-top: 0px;
     text-align: left;
-    border: 1px solid black;
+    border: 2px solid #000000;
     background: #F5F5F5;
 }
 #collegeFundSect {
     width: 20%;
-    padding: 0px 50px 30px 50px;
+    padding: 40px 20px 30px 30px;
     margin-top: -10px;
     margin-left: 500px;
     margin-right: 500px;
     margin-top: -50px;
     text-align: left;
-    border: 1px solid black;
+    border: 2px solid #000000;
     background: #F5F5F5;
 }
 #vacationSect {
     width: 20%;
-    padding: 0px 50px 30px 50px;
+    padding: 40px 40px 30px 40px;
     margin-left: 500px;
     margin-right: 500px;
     margin-top: -10px;
     text-align: left;
-    border: 1px solid black;
+    border: 2px solid #000000;
     background: #F5F5F5;
 }
 #set {
