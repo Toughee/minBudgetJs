@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="img/favicon//manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 
 
@@ -28,7 +35,8 @@
             <div class="row">
                 <div class="col">
 
-                    <button onclick="btn1()" class="btn btn-secondary">Yearly income</button> <sup>Show/hide</sup>
+                    <button onclick="btn1()" class="btn btn-secondary">
+                        <i class="fa fa-calculator"></i> Income calculator</button> <sup>Show/hide</sup>
 
                     <div id="grossIncomeSect">
 
@@ -42,7 +50,9 @@
                     </div>
                 </div>
                 <div class="col">
-                    <button onclick="btn2()" class="btn btn-secondary">Savings</button> <sup>Show/hide</sup>
+                    <button onclick="btn2()" class="btn btn-secondary">
+                        <i class="fa fa-money"></i> Savings
+                    </button> <sup>Show/hide</sup>
 
                     <div id="savingsSect">
 
@@ -67,7 +77,8 @@
                 <div class="col">
 
 
-                    <button onclick="btn3()" class="btn btn-secondary">College calculator</button> <sup>Show/hide</sup>
+                    <button onclick="btn3()" class="btn btn-secondary">
+                        <i class="fa fa-mortar-board"></i> College calculator</button> <sup>Show/hide</sup>
 
                     <div id="collegeFundSect">
 
@@ -95,7 +106,9 @@
                 </div>
 
                 <div class="col">
-                    <button onclick="btn4()" class="btn btn-secondary">Vacation</button> <sup>Show/hide</sup>
+                    <button onclick="btn4()" class="btn btn-secondary">
+                        <i class="fa fa-ship"></i> Vacation
+                    </button> <sup>Show/hide</sup>
 
                     <div id="vacationSect">
 
@@ -106,6 +119,7 @@
                         <input type="number" placeholder="Food and personal care" value="" id="food">
 
                         <label>Additional purchases</label>
+
                         <input type="number" placeholder="Gifts, souveniers, etc" value="" id="Add-purchase">
 
                         <button class="btn btn-primary btn-block" onclick="calculate4()">Calculate</button>
