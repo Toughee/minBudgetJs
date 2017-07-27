@@ -27,10 +27,9 @@ function calculate3() {
 }
 function calculate4() {
     var d1 = document.getElementById("destination").value;
-    var d2 = parseInt(document.getElementById("qty1-class4").value);
     var d3 = parseInt(document.getElementById("food").value);
     var d4 = parseInt(document.getElementById("travelFare").value);
     var d7 = parseInt(document.getElementById("Add-purchase").value);
-    var d8 = d4 + d7;
+    var d8 = d3 + d4 + d7;
     document.getElementById("num4").innerHTML = 'Your total cost for visiting ' + d1 + ' would be $' + d8.toLocaleString();
 }
