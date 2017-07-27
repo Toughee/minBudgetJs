@@ -1,169 +1,131 @@
-<!DOCTYPE html>
-<html>
+<!Doctype html>
+
+<html lang="en">
 
 <head>
-    <title>MinBudget</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>MinBudget.JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!--
-    [If using Internet Explorer or earlier version]
-    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 
 <body>
-    <header>
-        <p class="bigr">minBudget.js</p>
-        <p>Miniature calculator app</p>
-    </header>
 
-    <div id="set">
-        <h5><strong>Gross income per hour:</strong> Calculate your gross yearly income per hour</h5>
+    <h1>minBudget.js
+    </h1>
 
-<!-- Enter Yearly income before taxes,  calculate everything by division. Show result as an alert. Min_value - 12,500   Max_value = 750,000
+    <h2>
+        Miniature budget app
+    </h2>
 
-else - this value is too low to be calculated
-else - this value is too high to be calculated
---><section>
-        <button class= "btn"onclick="btn1()">Gross income per hour</button>
-        
-            <div id="grossIncomeSect">
-                
-                <label>Yearly Gross Income</label>
-                <input type="number"  value="" id="qty1-class1" placeholder="Yearly gross income">
-                <br>
-                <br>
+    <nav>
+        <div class="container">
 
-                <button class="btn btn-primary"onclick="calculate1()">Calculate</button>
-            
-                <h6 id="num1"></h6>
+            <div class="row">
+                <div class="col">
+
+                    <button onclick="btn1()" class="btn btn-secondary">Yearly income</button> <sup>Show/hide</sup>
+
+                    <div id="grossIncomeSect">
+
+                        <input type="number" value="" id="qty1-class1" placeholder="Hourly Wage" min="1000">
+                        <input type="number" value="" id="qty1-class2" placeholder="Average hours of work" min="1000">
+                        <input type="number" value="" id="qty1-class3" placeholder="Average weeks worked" min="1000">
+
+                        <button class="btn btn-primary btn-block" onclick="calculate1()">Calculate</button>
+
+                        <h6 id="num1"></h6>
+                    </div>
+                </div>
+                <div class="col">
+                    <button onclick="btn2()" class="btn btn-secondary">Savings</button> <sup>Show/hide</sup>
+
+                    <div id="savingsSect">
+
+                        <label>Average Income per month</label>
+                        <input type="number" id="qty1-income" placeholder="" value="">
+
+                        <label>Percentage of income used in savings</label>
+                        <input type="number" id="qty2-percent" value="">
+
+                        <input type="number" placeholder="Months for savings" value="" id="mnthsav">
+
+                        <input type="number" value="" id="svGoal" placeholder="Savings goal">
+
+                        <button class="btn btn-primary btn-block" onclick="calculate2()">Calculate</button>
+
+                        <h6 id="num2"></h6>
+
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+
+                    <button onclick="btn3()" class="btn btn-secondary">College calculator</button> <sup>Show/hide</sup>
+
+                    <div id="collegeFundSect">
+
+                        <input type="text" placeholder="Name of College" value="" id="collegeName">
+
+                        <input type="number" value="" id="tuit" placeholder="In/Out State tuition">
+
+                        <label>Expected number of semesters</label>
+                        <input type="number" name="" value="" placeholder="" id="semester">
+
+                        <label>Additional school purchases</label>
+
+                        <input type="number" name="Books" placeholder="Books and Dorm" value="" id="qty5-class3">
+
+                        <input type="number" value="" id="qty6-class3" Placeholder="Transportation">
+
+                        <input type="number" name="Transportation" id="qty7-class3" placeholder="Extra purchases">
+
+                        <input type="text" value="" id="qty8-class3" placeholder="Expected enrollment date">
+
+                        <button class="btn btn-primary btn-block" onclick="calculate3()">Calculate</button>
+
+                        <h6 id="num3"></h6>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <button onclick="btn4()" class="btn btn-secondary">Vacation</button> <sup>Show/hide</sup>
+
+                    <div id="vacationSect">
+
+                        <input type="text" name="Destination" placeholder="Destination" value="" id="destination">
+
+                        <input type="number" placeholder="Travel Fare" value="" id="travelFare">
+
+                        <input type="number" placeholder="Food and personal care" value="" id="food">
+
+                        <label>Additional purchases</label>
+                        <input type="number" placeholder="Gifts, souveniers, etc" value="" id="Add-purchase">
+
+                        <button class="btn btn-primary btn-block" onclick="calculate4()">Calculate</button>
+
+                        <h6 id="num4"></h6>
+                    </div>
+                </div>
             </div>
-    </section>
+        </div>
+    </nav>
+    <!-- Javascript-->
 
-        <br>
-        <h5><strong>Savings:</strong> Manage your savings with this option</h5>
+    <script src="js/toggle.js">
+    </script>
 
-        <button class="btn" onclick="btn2()">Savings calculator</button>
-        <section>
-            <div id="savingsSect">
-                <!--Sum earnings in time w/ savings goal. Show average time needed to attain goal-->
-                <label>Average Income per month</label>
-                <input type="number" name="Income" id="qty1-class2" placeholder="Average income" maxlength="10000000" minlength="1000"
-                value="0"> 
+    <script src="js/Calculate.js">
+    </script>
 
-                <label>Extra income</label>
-                <input type="number" name="Extra Income" id="qty2-class2" placeholder="Extra income" value=""> 
+    <!-- End of Javascript-->
 
-                <label>Years</label>
-                <input type="number" name="Additional_earnings" value="" id="qty3-class2" placeholder="Years">
-                
-                <label>Savings goal</label>
-                <input type="number" name="Time_for_savings" value="" id="qty4-class2" placeholder="Savings goal">
-
-                <br>
-                <br>
-                <button class="btn btn-primary btn-block"onclick="calculate2()">Calculate</button>
-                
-                <h6 id="num2"></h6>
-
-            </div>
-        </section>
-
-        <br>
-        <h5><strong>College Fund Money:</strong> Plan out your children's college early</h5>
-        <br>
-
-<!-- Show school, semester and tuition. Calculate how much moneny would be needed to cover semester tuition along with extra purchases (books, dorm, clothing)-->
-
-        <button class ="btn" onclick="btn3()">College Fund Money</button>
-        <br>
-        <section>
-            <div id="collegeFundSect">
-
-                <label>Name of College</label>
-                <input type="text" value="" id="collegeName"> 
-
-                <label>Yearly tuition</label>
-                <input type="number" name="Children" value="0" id="tuit"> 
-
-                <label>Expected number of semesters</label>
-                <input type="number" name="" value="0" placeholder="Expected semesters" id="semester">
-
-                <br>
-                <label><strong>Additional school purchases</strong></label>
-                
-                <label>Books</label>
-                <input type="number" name="Books" value="" id="qty5-class3">
-
-                <label>Dorm</label>
-                <input type="number" name="Dorm" value="" id="qty6-class3">
-
-                <label>Transportation</label>
-                <input type="number" name="Transportation" id="qty7-class3">
-
-                <label>Expected enrollment </label>
-                <input type="text" value="" id="qty8-class3">
-
-                <br>
-                <br>
-
-                <button class="btn btn-primary btn-block"onclick="calculate3()">Calculate</button>
-            
-                <h6 id="num3"></h6>
-            </div>
-        </section>
-
-        <br>
-        <h5><strong>Vacation planning:</strong> Plan out your vacation and everything in between</h5>
-
-<!--Show destination(s), cost of leaving and staying in a place, how much is needed to cover everything-->
-
-        <button class="btn" onclick="btn4()">Vacation planning</button>
-
-        <section>
-            <div id="vacationSect">
-                <br>
-                <input type="text" name="Destination" placeholder="Destination" value="" id="destination"> 
-                <br>
-                <br>
-
-                <input type="number" placeholder="Income" value="" id="qty1-class4"> 
-                <br>
-                <br>
-                <input type="number" value="" placeholder="Savings" id="qty2-class4">
-                <br>
-                <br>
-                
-                <input type="number" placeholder="Travel Fare" value="" id="travelFare"> 
-<!--
-                <label>Time for savings</label>
-                <input type="number" name="Time_for_savings" placeholder="Time for savings" value="" id="qty4-class4">
-
-                <label>Desired time of use</label>
-                <input type="number" name="" value="" id="qty5-class4" placeholder="Desired time of use"> 
--->
-                <label>Additional purchases</label>
-                <input label="purchases" type="number" placeholder="Gifts, souveniers, etc" value="" id="qty6-class4">
-
-                <br>
-                <br>
-
-
-                <button class="btn btn-primary btn-block"onclick="calculate4()">Calculate</button>
-            
-                <h6 id="num4"></h6>
-            </section>
-
-<!-- Javascript-->
-
-<script src="js/toggle.js">
-</script>
-
-<script src = "js/Calculate.js">
-</script>
-
-<!-- End of Javascript-->
-
-    </body>
+</body>
 
 </html>
