@@ -4,15 +4,16 @@ function calculate1() {
     var ab = document.getElementById("qty1-class3").value;
     var ac = a * aa * ab;
 
-    document.getElementById("num1").innerHTML = 'Your total yearly pay rate equals to $'+ Math.round(ac).toLocaleString();
+    document.getElementById("num1").innerHTML = 'Your total pay rate equals to $'+ Math.round(ac).toLocaleString() + '.';
 }
 function calculate2() {
     var bb = parseInt(document.getElementById("qty1-income").value);
-    var bc = Math.floor(parseInt(document.getElementById("qty2-percent").value / 100));
+    var bc = 0.100 * parseInt(document.getElementById("qty2-percent").value);
     var bd = parseInt(document.getElementById("mnthsav").value);
     var be = parseInt(document.getElementById("svGoal").value);
-    var bbb = bb * bc * bd;
-    document.getElementById("num2").innerHTML = 'You would have ' + bc +  ' saved in ' + bd + ' months  before reaching your goal of $' + be.toLocaleString();
+    var bcf = bc.toFixed(1);
+    var bbb = bb * bcf * bd;
+    document.getElementById("num2").innerHTML = 'You would have $' + bbb.toLocaleString() +  ' saved in ' + bd + ' months  before reaching your goal of $' + be.toLocaleString() + '.';
 }
 function calculate3() {
     var c1 = document.getElementById("collegeName").value;
@@ -23,7 +24,7 @@ function calculate3() {
     var c6 = parseInt(document.getElementById("qty7-class3").value);
     var c7 = document.getElementById("qty8-class3").value;
     var c8 = c2 * c4 + c5 + c6 * c3;
-    document.getElementById("num3").innerHTML = 'Your total cost for attending ' + c1 + ' would total into $' + c8.toLocaleString() + ' if you wish to attend on ' + c7;
+    document.getElementById("num3").innerHTML = 'Your total cost for attending ' + c1 + ' would total into $' + c8.toLocaleString() + ' if you wish to attend on ' + c7 + '.';
 }
 function calculate4() {
     var d1 = document.getElementById("destination").value;
@@ -31,5 +32,5 @@ function calculate4() {
     var d4 = parseInt(document.getElementById("travelFare").value);
     var d7 = parseInt(document.getElementById("Add-purchase").value);
     var d8 = d3 + d4 + d7;
-    document.getElementById("num4").innerHTML = 'Your total cost for visiting ' + d1 + ' would be $' + d8.toLocaleString();
+    document.getElementById("num4").innerHTML = 'Your total cost for visiting ' + d1 + ' would be $' + d8.toLocaleString() + '.';
 }
