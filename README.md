@@ -1,13 +1,13 @@
 # minBudget.Js
 
-Small Finance app created in Python
+Small Finance app developed using Javascript and Bootstrap. Fully responsive web app
 
 ## Categories available: 
 
-- Gross annual income per hour
-- Savings
-- College Fund Money
-- Vacation
+- Hourly wage calculator
+- Savings calculator
+- College Fund planner
+- Vacation planning
 
 ### Contributing
 
