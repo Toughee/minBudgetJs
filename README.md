@@ -1,6 +1,6 @@
 # minBudget.Js
 
-Small Finance app developed using Javascript and Bootstrap. Fully responsive web app
+Small Finance app developed using Javascript and Bootstrap. 
 
 ## Categories available: 
 
