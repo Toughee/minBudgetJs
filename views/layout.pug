@@ -1,0 +1,90 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+
+
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
+    // Favicon
+    //link(rel='apple-touch-icon', sizes='180x180', href='img/favicon//apple-touch-icon.png')
+    //link(rel='icon', type='image/png', sizes='32x32', href='img/favicon//favicon-32x32.png')
+    //link(rel='icon', type='image/png', sizes='16x16', href='img/favicon//favicon-16x16.png')
+    //link(rel='manifest', href='img/favicon//manifest.json')
+    //meta(name='theme-color', content='#ffffff')
+  body
+    block content
+
+    nav
+      div.container
+        div.row
+          div.col
+            button.btn.btn-secondary(onclick='btn1()')
+              i.fa.fa-calculator
+              |  Income calculator
+            sup Show/hide
+            #grossIncomeSect
+              input#qty1-class1(type='number', value='', placeholder='Hourly Wage', min='1000')
+              input#qty1-class2(type='number', value='', placeholder='Average hours of work', min='1000')
+              input#qty1-class3(type='number', value='', placeholder='Average weeks worked', min='1000')
+              button.btn.btn-primary.btn-block(onclick='calculate1()') Calculate
+              h6#num1
+          div.col
+            button.btn.btn-secondary(onclick='btn2()')
+              i.fa.fa-money
+              |  Savings
+            sup Show/hide
+            #savingsSect
+              label Average Income per month
+              input#qty1-income(type='number', placeholder='', value='')
+              label Percentage of income used in savings
+              input#qty2-percent(type='number', value='')
+              input#mnthsav(type='number', placeholder='Months for savings', value='')
+              input#svGoal(type='number', value='', placeholder='Savings goal')
+              button.btn.btn-primary.btn-block(onclick='calculate2()') Calculate
+              h6#num2
+          div.col
+            button.btn.btn-secondary(onclick='btn3()')
+              i.fa.fa-mortar-board
+              |  College calculator
+            sup Show/hide
+            #collegeFundSect
+              input#collegeName(type='text', placeholder='Name of College', value='')
+              input#tuit(type='number', value='', placeholder='In/Out State tuition')
+              label Expected number of semesters
+              input#semester(type='number', name='', value='', placeholder='')
+              label Additional school purchases
+              input#qty5-class3(type='number', name='Books', placeholder='Books and Dorm', value='')
+              input#qty6-class3(type='number', value='', placeholder='Transportation')
+              input#qty7-class3(type='number', name='Transportation', placeholder='Extra purchases')
+              input#qty8-class3(type='text', value='', placeholder='Expected enrollment date')
+              button.btn.btn-primary.btn-block(onclick='calculate3()') Calculate
+              h6#num3
+          div.col
+            button.btn.btn-secondary(onclick='btn4()')
+              i.fa.fa-ship
+              |  Vacation
+            sup Show/hide
+            #vacationSect
+              input#destination(type='text', name='Destination', placeholder='Destination', value='')
+              input#travelFare(type='number', placeholder='Travel Fare', value='')
+              input#food(type='number', placeholder='Food and personal care', value='')
+              label Additional purchases
+              input#Add-purchase(type='number', placeholder='Gifts, souveniers, etc', value='')
+              button.btn.btn-primary.btn-block(onclick='calculate4()') Calculate
+              h6#num4
+
+    
+      <script src="javascripts/toggle.js">
+      </script>
+      <script src="javascripts/Calculate.js">
+      </script>
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+      
+

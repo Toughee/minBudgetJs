@@ -16,3 +16,13 @@ Contributions and suggestions are always welcome.
 - Suggesting a new category by making an issue for it  
 - Forking the repository and adding anything you think might improve it 
 - Reporting any bugs you might find
+
+### Tools used 
+
+```
+Express
+Pug
+Bootstrap
+Javascript
+
+```
