@@ -2,6 +2,10 @@
 
 Small Finance app developed using Javascript and Bootstrap. 
 
+### Last fixes left
+
+- [ ] npm server setup
+
 ## Categories available: 
 
 - Hourly wage calculator
