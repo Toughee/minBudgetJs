@@ -20,7 +20,6 @@ Contributions and suggestions are always welcome.
 ### Tools used 
 
 ```
-Express
 Bootstrap
 Javascript
 

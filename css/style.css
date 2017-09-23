@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One|Quicksand');
+
+
+body {
+    background: #52C1F5;
+}
+
+/*
+====================
+    Font
+====================
+*/
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Passion One', cursive;
+    font-size: 50px;
+}
+h2 {
+    color: #FFFFFF;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 70px;
+    font-family: 'Quicksand', sans-serif;
+}
+h1,
+h2 {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+h6 {
+    margin: 15px auto;
+}
+button {
+    background: #FFFFFF;
+    font-family: 'Impact';
+    margin-right: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+nav {
+    margin-left: 25px;
+    margin-top: 50px;
+}/*
+====================
+    Categories
+====================
+*/
+#grossIncomeSect {
+    border: 2px solid #000000;
+    background: #F5F5F5;
+    margin: 5px auto;
+    padding: 10px 10px 10px 10px;
+}
+#savingsSect {
+    border: 2px solid #000000;
+    background: #F5F5F5;
+    margin: 5px auto;
+    padding: 10px 10px 10px 10px;
+}
+#collegeFundSect {
+    border: 2px solid #000000;
+    background: #F5F5F5;
+    margin: 5px auto;
+    padding: 10px 10px 10px 10px;
+}
+#vacationSect {
+    border: 2px solid #000000;
+    background: #F5F5F5;
+    margin: 5px auto;
+    padding: 10px 10px 10px 10px;
+}
+/*
+===============
+    Input
+===============
+*/
+button {
+    margin-top: 10px;
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 5px; 
+}
+i {
+    margin: 1px auto;
+}
+sup {
+    color: #FFFFFF;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: -10px;
+}
